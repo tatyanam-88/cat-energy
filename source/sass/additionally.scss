@@ -1,0 +1,75 @@
+.additionally {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+
+    background-color: #ffffff;
+}
+
+.additionally__title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;    
+}
+
+.additionally__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;    
+}
+
+.additionally__item {
+    padding-top: 20px;
+
+    border-top: 2px solid #cdcdcd;    
+}
+
+.additionally__name {
+    margin: 0;
+    margin-bottom: 20px;
+    
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.additionally__pack {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: none;   
+    color: #222222; 
+}
+
+.additionally__item--vitamins {
+    margin-bottom: 40px;
+    
+    border-bottom: 2px solid #cdcdcd;    
+}
+
+.additionally__stock {
+    background-image: url(../img/gift-photo-mobile@1x.jpg);
+    background-repeat: no-repeat;
+}
+
+.additionally__slogan {
+    margin: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 190px;
+    padding-bottom: 40px;
+
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+}

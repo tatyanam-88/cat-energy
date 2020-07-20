@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald"),
+         local("Oswald"),
+         url("../fonts/oswald-v35-latin_cyrillic-regular.woff2") format("woff2"),
+         url("../fonts/oswald-v35-latin_cyrillic-regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;   
+}
+  
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: local("PT Sans Narrow Bold"), 
+         local("PTSans-NarrowBold"),
+         url("../fonts/oswald-v35-latin_cyrillic-500.woff2") format("woff2"), 
+         url("../fonts/oswald-v35-latin_cyrillic-500.woff") format("woff"); 
+    font-style: normal;
+    font-weight: 500;     
+}
+ 

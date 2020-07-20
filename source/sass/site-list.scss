@@ -1,0 +1,16 @@
+.site-list__item,
+.site-list__item--active {
+    padding-top: 20px;
+    padding-bottom: 20px;   
+    border-top: 2px solid #e6e6e6;     
+}
+
+.site-list__item a,
+.site-list__item--active {    
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}

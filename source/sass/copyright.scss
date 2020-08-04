@@ -1,3 +1,9 @@
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .copyright__link {
     text-decoration: none;
 
@@ -5,4 +11,12 @@
     font-size: 16px;
     line-height: 16px;
     color: #444444;
+}
+
+@media (min-width:$tablet) {
+    .copyright__link {
+        margin-right: 20px;
+        
+        align-self: center;
+    }
 }

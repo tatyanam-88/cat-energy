@@ -4,8 +4,9 @@
 }
 
 .advantages__wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0 auto;
+
+    width: 280px;
 }
 
 .advantages__title {
@@ -19,7 +20,7 @@
 
 .advantages__list {
     margin: 0;
-    padding: 0;
+    padding: 0;   
 
     list-style: none;
 }
@@ -32,3 +33,127 @@
     line-height: 18px;
 }
 
+.advantages__text {
+    margin: 0;
+    margin-left: 80px;
+}
+
+.advantages__item--leaf {
+    background-image: url(../img/leaf.png);
+    background-repeat: no-repeat;
+}
+
+.advantages__item--water {
+    background-image: url(../img/water.png);
+    background-repeat: no-repeat;
+}
+
+.advantages__item--food {
+    background-image: url(../img/dinner.png);
+    background-repeat: no-repeat;
+}
+
+.advantages__item--clock {
+    background-image: url(../img/clock.png);
+    background-repeat: no-repeat;
+}
+
+@media (min-width:$tablet) {
+    .advantages {
+        padding: 0;
+        margin-bottom: 20px;
+
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .advantages__wrapper {
+        width: 708px;
+    }
+
+    .advantages__title {
+        font-size: 60px;
+    }
+
+    .advantages__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .advantages__item {
+       margin-bottom: 120px;
+       width: 264px;
+
+       font-size: 16px;
+       line-height: 24px;
+       position: relative;
+    }       
+    
+    .advantages__text {
+        margin-top: 90px;
+        margin-left: 0;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    .advantages__item--food,
+    .advantages__item--clock {
+        margin: 0;
+        padding-bottom: 90px;
+    }
+
+    .advantages__item--leaf::before {
+        content: "1";
+        font-size: 281px;
+        line-height: 281px;
+        color: #f2f2f2;
+
+        position: absolute;
+        top: -36px;
+        right: 16px;
+    }
+
+    .advantages__item--water::before {
+        content: "2";
+        font-size: 281px;
+        line-height: 281px;
+        color: #f2f2f2;
+
+        position: absolute;
+        top: -36px;
+        right: 16px;
+    }
+
+    .advantages__item--food::before {
+        content: "3";
+        font-size: 281px;
+        line-height: 281px;
+        color: #f2f2f2;        
+
+        position: absolute;
+        top: -36px;
+        right: 16px;
+    }
+
+    .advantages__item--clock::before {
+        content: "4";
+        font-size: 281px;
+        line-height: 281px;
+        color: #f2f2f2;
+
+        position: absolute;
+        top: -36px;
+        right: 16px;
+    }
+}
+
+@media (min-width:$desktop) {
+    .advantages {
+        border-bottom: none;
+    }
+    
+    .advantages__wrapper {
+        width: 1220px;
+    }
+}

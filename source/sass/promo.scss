@@ -1,19 +1,27 @@
-.promo {      
-    background-image: url("../img/index-background-mobile@1x.jpg");    
-    background-repeat: no-repeat;
+.promo {
+    padding-bottom: 22px;
+
     background-color: #ffffff;
-   
+}
+
+.promo__background {      
+    background-image: url("../img/index-background-mobile@1x.jpg");    
+    background-repeat: no-repeat; 
+    background-position: center center;
+    height: 305px;
+    background-color: #63a73a; 
 }
 
 .promo__wrapper {
-    padding-left: 20px;
-    padding-right: 20px;   
+   margin: 0 auto;
+   
+   width: 280px;
 }
 
 .promo__title {
-    margin: 0;
-    padding-top: 20px;  
-    margin-bottom: 25px;  
+    margin: 0;     
+    margin-bottom: 25px; 
+    margin-top: -277px; 
 
     font-size: 36px;
     line-height: 36px;
@@ -34,9 +42,104 @@
     text-align: center;
 }
 
-.promo__select-programm {
+.promo__photo-tablet,
+.promo__photo-desktop {
+    display: none;
+}
+
+.promo__select-programm {    
     text-decoration: none;
     display: block; 
     
     text-align: center;
+}
+
+@media (min-width:$tablet) {
+    .promo__background {
+        display: none;
+    }
+
+    .promo__wrapper {
+        width: 708px;
+        position: relative;
+    }
+
+    .promo__title {
+        margin: 0;
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-bottom: 35px;
+
+        font-size: 60px;
+        line-height: 60px;
+        color: #000000;
+        text-align: left;
+    }
+
+    .promo__slogan {
+        margin-left: 90px;
+
+        font-size: 20px;
+        line-height: 20px;
+        color: #000000;
+        text-align: left;
+    }
+
+    .promo__photo {
+        display: none;
+    }
+
+    .promo__photo-tablet {
+        display: block;      
+    }
+
+    .promo__photo-desktop {
+        display: none;
+    }
+
+    .promo__select-programm {
+       width: 208px;
+
+       position: absolute;
+       top: 220px;
+       left: 90px;
+    }
+}
+
+@media (min-width:$desktop) {    
+    .promo__wrapper {
+        width: 1220px;
+
+        position: absolute;
+        top: 180px;
+        left: 110px;
+    }
+
+    .promo__title {
+        margin: 0;
+        margin-left: 70px;
+        margin-right: 580px;
+        margin-bottom: 40px;
+    }
+
+    .promo__slogan {
+        margin: 0;
+        margin-left: 70px;
+    }
+
+    .promo__photo-tablet {
+        display: none;
+    }
+
+    .promo__photo-desktop {
+        margin: 0;
+        display: block;
+        position: relative;
+        bottom: 230px;
+        left: 455px;
+    }
+
+    .promo__select-programm {       
+        left: 70px;        
+    }
 }

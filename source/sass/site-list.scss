@@ -1,8 +1,9 @@
+
 .site-list__item,
 .site-list__item--active {
     padding-top: 20px;
     padding-bottom: 20px;   
-    border-top: 2px solid #e6e6e6;     
+    border-top: 1px solid #e6e6e6;     
 }
 
 .site-list__item a,
@@ -13,4 +14,26 @@
     text-decoration: none;
     color: #000000;
     text-transform: uppercase;
+}
+
+@media (min-width:$tablet) {
+    .site-list__item {
+        border: none;  
+        font-size: 18px;
+        line-height: 20px;                          
+    }
+
+    .site-list__item a,
+    .site-list__item--active {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:$desktop) {
+    .site-list__item a,
+    .site-list__item--active {
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 24px;
+    }
 }

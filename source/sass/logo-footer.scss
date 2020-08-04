@@ -7,3 +7,14 @@
 .logo-footer__photo {
     margin-bottom: 25px;
 }
+
+@media (min-width:$tablet) {
+    .logo-footer {
+        border: none;
+        align-self: center;
+    }
+
+    .logo-footer__photo {
+        margin: 0;
+    }
+}

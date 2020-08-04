@@ -1,8 +1,8 @@
 {
-  "name": "barbershop",
+  "name": "catenergy",
   "version": "1.0.0",
   "private": true,
-  "description": "Учебный проект «Barbershop» от HTML Academy",
+  "description": "Личный проект «Cat Energy» от HTML Academy",
   "main": "index.html",
   "dependencies": {
     "gulp": "^4.0.2",

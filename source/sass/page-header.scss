@@ -1,3 +1,127 @@
-.page-header {
-    background-color: #ffffff;
+
+.page-header__wrapper {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    
+    width: 280px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
 }
+
+.page-header__logo {
+    display: flex;
+}
+
+.page-header__logo-cat {
+    margin: 0;
+    margin-right: 57px;
+}
+
+.page-header__logo-tablet {
+    display: none;
+}
+
+.page-header__logo-desktop {
+    display: none;
+}
+
+.page-header__toggle {
+    padding: 0;    
+   
+    width: 22px;
+    height: 22px;
+
+    border: none;
+    background-color: #ffffff;
+
+    &::before {
+        position: absolute;  
+        top: 20px;
+        right: 9px; 
+
+        content: "";
+        height: 23px;
+        width: 2px;
+        background-color: #000000;
+        transform: rotate(45deg);
+        }
+
+    &::after {
+        position: absolute;  
+        top: 20px;
+        right: 9px;
+
+        content: "";
+        height: 23px;
+        width: 2px;
+        background-color: #000000;
+        transform: rotate(-45deg);
+    }
+}
+
+@media (min-width:$tablet) {
+    .page-header {
+       padding-bottom: 60px;      
+    }
+
+    .page-header__container {
+        margin: 0 auto;
+        padding-top: 24px;
+
+        width: 708px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page-header__wrapper {
+        margin: 0;
+        padding: 0;
+
+        width: 180px;
+    }
+    
+    .page-header__logo-cat,
+    .page-header__logo-image {
+        display: none;
+    }
+
+    .page-header__logo-tablet {
+        display: block;
+    }
+
+    .page-header__logo-desktop {
+        display: none;
+    }
+
+    .page-header__toggle {
+        display: none;
+    }
+}
+
+@media (min-width:$desktop) {   
+    .page-header {
+        margin-bottom: 60px;
+        padding-bottom: 600px;
+    } 
+
+    .page-header__container {
+        padding-top: 50px;
+
+        width: 1220px;
+    }    
+
+    .page-header__logo-tablet {
+        display: none;
+    }
+
+    .page-header__logo-desktop {
+        display: block;
+    }
+}
+
+
+

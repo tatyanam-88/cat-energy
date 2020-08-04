@@ -1,5 +1,7 @@
-.main-nav__toggle {
-    padding: 0;
+.main-nav__wrapper {    
+    margin: 0 auto;
+
+    text-align: center;
 }
 
 .main-nav__list {
@@ -10,5 +12,25 @@
 }
 
 .main-nav__list:last-child {
-    border-bottom: 2px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
 }
+
+@media (min-width:$tablet) { 
+      
+    .main-nav__list {
+        display: flex;  
+        min-width: 450px;  
+        justify-content: space-between;         
+    }
+
+    .main-nav__list:last-child {
+        border: none;
+    }
+}
+
+@media (min-width:$desktop) { 
+    .main-nav__list {
+        min-width: 480px;
+    }  
+}
+

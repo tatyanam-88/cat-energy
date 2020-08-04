@@ -1,10 +1,16 @@
-.contact {
-    padding-left: 20px;
-    padding-right: 20px;
+.contact {   
     padding-top: 30px;
     padding-bottom: 30px;  
 
     background-color: #ffffff;
+}
+
+.contact__wrapper {
+    margin: 0 auto;
+
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact__catalog {
@@ -24,5 +30,43 @@
 
     font-family: "Arial", sans-serif;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 20px;    
+}
+
+@media (min-width:$tablet) {
+    .contact__wrapper {
+        width: 708px;
+        justify-content: space-around;
+    }
+
+    .contact__partnership {
+        font-size: 20px;
+        line-height: 25px;
+        width: 145px;
+    }
+
+    .contact__address {
+        font-size: 16px;
+         width: 165px;
+    }
+}
+
+@media (min-width:$desktop) {
+    .contact__wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 60px;
+        padding-right: 90px;
+
+        width: 370px;
+        background-color: #ffffff;
+
+        position: absolute;
+        top: 65px;
+        left: 150px;
+    }
+
+    .contact__partnership {
+        margin-right: 70px;
+    }
 }

@@ -1,12 +1,10 @@
 .catalog {
-    padding-left: 20px;
-    padding-right: 20px; 
-    padding-top: 25px;
-
     background-color: #ffffff;   
 }
 
 .catalog__wrapper {
+    margin: 0 auto;
+
     width: 280px;
 }
 
@@ -22,7 +20,17 @@
 
 .catalog__slim {
     margin-bottom: 20px;
+
+    background-image: url(../img/cat-slim-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 10% 13%;
 }
+
+.catalog__weight {     
+    background-image: url(../img/cat-pro-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0 13%;
+}   
 
 .catalog__title {
     margin: 0;
@@ -44,7 +52,7 @@
     line-height: 18px;
     font-family: "Arial", sans-serif;  
     
-    border-bottom: 2px solid #d9d9d9;    
+    border-bottom: 1px solid #d9d9d9;    
 }
 
 .catalog__link {
@@ -53,4 +61,98 @@
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
+}
+
+@media (min-width:$tablet) {
+    .catalog {
+        padding-bottom: 40px;
+    }
+    
+    .catalog__wrapper {
+        width: 708px;
+    }
+
+    .catalog__slim {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 80px;
+        padding-bottom: 60px;
+
+        background-image: url(../img/cat-slim.png);
+        background-repeat: no-repeat;
+        background-position: 89% 49%;
+    }
+
+    .catalog__title {
+        margin-bottom: 20px;
+
+        text-align: left;
+    }
+
+    .catalog__info {
+        border: none;
+
+        width: 340px;
+    }
+
+    .catalog__weight {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 80px;
+        padding-bottom: 60px;
+
+        background-image: url(../img/cat-pro.png);
+        background-repeat: no-repeat;
+        background-position: 93% 66%;
+    }    
+}
+
+@media (min-width:$desktop) {
+    .catalog {
+        padding-bottom: 80px;
+    }
+
+    .catalog__wrapper {
+        width: 1220px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .catalog__slim {
+        width: 38%;
+        margin: 0;       
+        padding-top: 60px;        
+
+        background-image: url(../img/cat-slim-desktop.png);
+        background-repeat: no-repeat;
+        background-position: 10% 10%;
+    }
+
+    .catalog__title {
+        margin-bottom: 75px;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .catalog__info {
+        font-size: 16px;
+        line-height: 24px;
+
+        width: 100%;
+    }
+
+    .catalog__link {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .catalog__weight {  
+        width: 38%;
+        padding-top: 60px;  
+
+        background-image: url(../img/cat-pro-desktop.png);
+        background-repeat: no-repeat;
+        background-position: 5% 10%;
+    }    
 }

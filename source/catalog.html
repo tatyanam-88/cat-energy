@@ -9,221 +9,316 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header class="page-header">
-        <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="192" height="36" alt="Cat Energy">
-        </a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item"><a href="index.html">Главная</a></li>
-                    <li class="site-list__item site-list__item--active"><a>Каталог продукции</a></li>
-                    <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
-                </ul>
+<body class="body__wrapper">
+    <header class="page-header page-header--desktop">
+        <div class="page-header__container">
+            <div class="page-header__wrapper">
+                <a class="page-header__logo">
+                    <img class="page-header__logo-cat" src="img/logo-mobile-cat.png" width="33" height="38"
+                        alt="Изображение кота">
+                    <img class="page-header__logo-image" src="img/logo-mobile-header.svg" width="101" height="18"
+                        alt="Cat Energy">
+                    <img class="page-header__logo-tablet" src="img/logo-tablet.svg" width="173" height="58"
+                        alt="Логотип Cat Energy">
+                    <img class="page-header__logo-desktop" src="img/logo-desktop.svg" width="202" height="59"
+                        alt="Логотип Cat Energy">
+                </a>
+                <button class="page-header__toggle" type="button"></button>
             </div>
-        </nav>
+            <nav class="main-nav">
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item site-list__item--desktop"><a href="index.html">Главная</a></li>
+                        <li class="site-list__item site-list__item--active site-list__item--desktop"><a>Каталог
+                                продукции</a></li>
+                        <li class="site-list__item site-list__item--desktop"><a href="form.html">Подбор программы</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main class="page-main">
         <div class="page-main__wrapper">
-            <h1 class="page-main__title">Каталог продукции</h1>
-            <section class="goods">
-                <ul class="goods__list">
-                    <li class="goods__item">
-                        <img class="goods__photo" src="img/chicken-small-mobile@1x.jpg" width="140" height="144"
-                            alt="Питание для кошек со вкусом курицы объёмом 500 гр">
-                        <span class="goods__name">Cat Energy Pro 500 г</span>
-                        <table class="goods__info">
-                            <tr>
-                                <td class="goods__parameters">Объем</td>
-                                <td class="goods__data">500 г</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Вкус</td>
-                                <td class="goods__data">Курица</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Цена</td>
-                                <td class="goods__data">700 р.</td>
-                            </tr>
-                        </table>
-                        <button class="goods__order button" type="button">Заказать</button>
-                    </li>
-                    <li class="goods__item">
-                        <img class="goods__photo" src="img/chicken-big-mobile@1x.jpg" width="140" height="144"
-                            alt="Питание для кошек со вкусом курицы объёмом 1000 гр">
-                        <span class="goods__name">Cat Energy Pro 1000 г</span>
-                        <table class="goods__info">
-                            <tr>
-                                <td class="goods__parameters">Объем</td>
-                                <td class="goods__data">1000 г</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Вкус</td>
-                                <td class="goods__data">Курица</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Цена</td>
-                                <td class="goods__data">1000 р.</td>
-                            </tr>
-                        </table>
-                        <button class="goods__order button" type="button">Заказать</button>
-                    </li>
-                    <li class="goods__item">
-                        <img class="goods__photo" src="img/fish-small-mobile@1x.jpg" width="140" height="144"
-                            alt="Питание для кошек со вкусом рыбы объёмом 500 гр">
-                        <span class="goods__name">Cat Energy Pro 500 г</span>
-                        <table class="goods__info">
-                            <tr>
-                                <td class="goods__parameters">Объем</td>
-                                <td class="goods__data">500 г</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Вкус</td>
-                                <td class="goods__data">Рыба</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Цена</td>
-                                <td class="goods__data">700 р.</td>
-                            </tr>
-                        </table>
-                        <button class="goods__order button" type="button">Заказать</button>
-                    </li>
-                    <li class="goods__item">
-                        <img class="goods__photo" src="img/fish-big-mobile@1x.jpg" width="140" height="144"
-                            alt="Питание для кошек со вкусом рыбы объёмом 1000 гр">
-                        <span class="goods__name">Cat Energy Pro 1000 г</span>
-                        <table class="goods__info">
-                            <tr>
-                                <td class="goods__parameters">Объем</td>
-                                <td class="goods__data">1000 г</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Вкус</td>
-                                <td class="goods__data">Рыба</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Цена</td>
-                                <td class="goods__data">1000 р.</td>
-                            </tr>
-                        </table>
-                        <button class="goods__order button" type="button">Заказать</button>
-                    </li>
-                    <li class="goods__item">
-                        <img class="goods__photo" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144"
-                            alt="Питание для кошек со вкусом гречки объёмом 500 гр">
-                        <span class="goods__name">Cat Energy Slim 500 г</span>
-                        <table class="goods__info">
-                            <tr>
-                                <td class="goods__parameters">Объем</td>
-                                <td class="goods__data">500 г</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Вкус</td>
-                                <td class="goods__data">Гречка</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Цена</td>
-                                <td class="goods__data">400 р.</td>
-                            </tr>
-                        </table>
-                        <button class="goods__order button" type="button">Заказать</button>
-                    </li>
-                    <li class="goods__item">
-                        <img class="goods__photo" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144"
-                            alt="Питание для кошек со вкусом гречки объёмом 1000 гр">
-                        <span class="goods__name">Cat Energy Slim 1000 г</span>
-                        <table class="goods__info">
-                            <tr>
-                                <td class="goods__parameters">Объем</td>
-                                <td class="goods__data">1000 г</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Вкус</td>
-                                <td class="goods__data">Гречка</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Цена</td>
-                                <td class="goods__data">700 р.</td>
-                            </tr>
-                        </table>
-                        <button class="goods__order button" type="button">Заказать</button>
-                    </li>
-                    <li class="goods__item">
-                        <img class="goods__photo" src="img/rice-small-mobile@1x.jpg" width="140" height="144"
-                            alt="Питание для кошек со вкусом риса объёмом 500 гр">
-                        <span class="goods__name">Cat Energy Slim 500 г</span>
-                        <table class="goods__info">
-                            <tr>
-                                <td class="goods__parameters">Объем</td>
-                                <td class="goods__data">500 г</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Вкус</td>
-                                <td class="goods__data">Рис</td>
-                            </tr>
-                            <tr>
-                                <td class="goods__parameters">Цена</td>
-                                <td class="goods__data">500 р.</td>
-                            </tr>
-                        </table>
-                        <button class="goods__order button" type="button">Заказать</button>
-                    </li>
-                    <li class="goods__item goods__item--show">
-                        <span class="goods__plus"></span>
-                        <p class="goods__show">Показать еще 100500 товаров</p>
-                        <p class="goods__explain">На самом деле вкусов гораздо больше!</p>
-                        <button class="goods__showall button" type="button">Показать все</button>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="additionally">
-                <h2 class="additionally__title">Дополнительные товары</h2>
-                <ul class="additionally__list">
-                    <li class="additionally__item">
-                        <p class="additionally__name">Сахарозаменитель</p>
-                        <p class="additionally__pack">1 упаковка (100 г) <span class="additionally__price">100
-                                Р.</span></p>
-                        <button class="goods__order button" type="button">Заказать</button>
-                    </li>
-                    <li class="additionally__item">
-                        <p class="additionally__name">Питьевая вода</p>
-                        <p class="additionally__pack">5 литров <span class="additionally__price">50 Р.</span></p>
-                        <button class="goods__order button" type="button">Заказать</button>
-                    </li>
-                    <li class="additionally__item">
-                        <p class="additionally__name">Молоко</p>
-                        <p class="additionally__pack">1 литр <span class="additionally__price">100 Р.</span></p>
-                        <button class="goods__order button" type="button">Заказать</button>
-                    </li>
-                    <li class="additionally__item additionally__item--vitamins">
-                        <p class="additionally__name">Витамины</p>
-                        <p class="additionally__pack">1 упаковка (30 г) <span class="additionally__price">300 Р.</span>
-                        </p>
-                        <button class="goods__order button" type="button">Заказать</button>
-                    </li>
-                </ul>
-                <div class="additionally__stock">
-                    <p class="additionally__slogan">Закажите все и получите чехол для кота в подарок!</p>
-                </div>
-            </section>
+            <div class="page-main__container">
+                <h1 class="page-main__title page-main__title--tablet page-main__title--desktop">Каталог продукции</h1>
+                <section class="goods">
+                    <ul class="goods__list">
+                        <li class="goods__item">
+                            <div class="goods__wrapper">
+                                <img class="goods__photo" src="img/chicken-small-mobile@1x.jpg" width="140" height="144"
+                                    alt="Питание для кошек со вкусом курицы объёмом 500 гр">
+                                <img class="goods__photo--tablet" src="img/chicken-small-tablet.png" width="161"
+                                    height="172" alt="Питание для кошек со вкусом курицы объёмом 500 гр">
+                                <div class="goods__container">
+                                    <span class="goods__name">Cat Energy <br class="goods__wrap"> Pro <br
+                                            class="goods__wrap--tablet"> 500 г</span>
+                                    <table class="goods__info">
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Объем</td>
+                                            <td class="goods__data">500 г</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Вкус</td>
+                                            <td class="goods__data">Курица</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Цена</td>
+                                            <td class="goods__data">700 Р.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button class="goods__order button" type="button">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__wrapper">
+                                <img class="goods__photo" src="img/chicken-big-mobile@1x.jpg" width="140" height="144"
+                                    alt="Питание для кошек со вкусом курицы объёмом 1000 гр">
+                                <img class="goods__photo--tablet-big" src="img/chicken-big-tablet.png" width="195"
+                                    height="208" alt="Питание для кошек со вкусом курицы объёмом 1000 гр">
+                                <div class="goods__container">
+                                    <span class="goods__name">Cat Energy <br class="goods__wrap"> Pro <br
+                                            class="goods__wrap--tablet"> 1000 г</span>
+                                    <table class="goods__info">
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Объем</td>
+                                            <td class="goods__data">1000 г</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Вкус</td>
+                                            <td class="goods__data">Курица</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Цена</td>
+                                            <td class="goods__data">1000 Р.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button class="goods__order button" type="button">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__wrapper">
+                                <img class="goods__photo" src="img/fish-small-mobile@1x.jpg" width="140" height="144"
+                                    alt="Питание для кошек со вкусом рыбы объёмом 500 гр">
+                                <img class="goods__photo--tablet" src="img/fish-small-tablet.png" width="163"
+                                    height="174" alt="Питание для кошек со вкусом рыбы объёмом 1000 гр">
+                                <div class="goods__container">
+                                    <span class="goods__name">Cat Energy <br class="goods__wrap"> Pro <br
+                                            class="goods__wrap--tablet"> 500 г</span>
+                                    <table class="goods__info">
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Объем</td>
+                                            <td class="goods__data">500 г</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Вкус</td>
+                                            <td class="goods__data">Рыба</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Цена</td>
+                                            <td class="goods__data">700 Р.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button class="goods__order button" type="button">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__wrapper">
+                                <img class="goods__photo" src="img/fish-big-mobile@1x.jpg" width="140" height="144"
+                                    alt="Питание для кошек со вкусом рыбы объёмом 1000 гр">
+                                <img class="goods__photo--tablet-big" src="img/fish-big-tablet.png" width="194"
+                                    height="208" alt="Питание для кошек со вкусом рыбы объёмом 1000 гр">
+                                <div class="goods__container">
+                                    <span class="goods__name">Cat Energy <br class="goods__wrap"> Pro <br
+                                            class="goods__wrap--tablet"> 1000 г</span>
+                                    <table class="goods__info">
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Объем</td>
+                                            <td class="goods__data">1000 г</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Вкус</td>
+                                            <td class="goods__data">Рыба</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Цена</td>
+                                            <td class="goods__data">1000 Р.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button class="goods__order button" type="button">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__wrapper">
+                                <img class="goods__photo" src="img/buckwheat-small-mobile@1x.jpg" width="140"
+                                    height="144" alt="Питание для кошек со вкусом гречки объёмом 500 гр">
+                                <img class="goods__photo--tablet" src="img/buckwheat-small-tablet.png" width="161"
+                                    height="171" alt="Питание для кошек со вкусом гречки объёмом 500 гр">
+                                <div class="goods__container">
+                                    <span class="goods__name">Cat Energy <br class="goods__wrap"> Slim <br
+                                            class="goods__wrap--tablet"> 500 г</span>
+                                    <table class="goods__info">
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Объем</td>
+                                            <td class="goods__data">500 г</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Вкус</td>
+                                            <td class="goods__data">Гречка</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Цена</td>
+                                            <td class="goods__data">400 Р.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button class="goods__order button" type="button">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__wrapper">
+                                <img class="goods__photo" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144"
+                                    alt="Питание для кошек со вкусом гречки объёмом 1000 гр">
+                                <img class="goods__photo--tablet-big" src="img/buckwheat-big-tablet.png" width="195"
+                                    height="208" alt="Питание для кошек со вкусом гречки объёмом 1000 гр">
+                                <div class="goods__container">
+                                    <span class="goods__name">Cat Energy <br class="goods__wrap"> Slim <br
+                                            class="goods__wrap--tablet"> 1000 г</span>
+                                    <table class="goods__info">
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Объем</td>
+                                            <td class="goods__data">1000 г</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Вкус</td>
+                                            <td class="goods__data">Гречка</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Цена</td>
+                                            <td class="goods__data">700 Р.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button class="goods__order button" type="button">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item">
+                            <div class="goods__wrapper">
+                                <img class="goods__photo" src="img/rice-small-mobile@1x.jpg" width="140" height="144"
+                                    alt="Питание для кошек со вкусом риса объёмом 500 гр">
+                                <img class="goods__photo--tablet" src="img/rice-tablet.png" width="163" height="174"
+                                    alt="Питание для кошек со вкусом риса объёмом 500 гр">
+                                <div class="goods__container">
+                                    <span class="goods__name">Cat Energy <br class="goods__wrap"> Slim <br
+                                            class="goods__wrap--tablet"> 500 г</span>
+                                    <table class="goods__info">
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Объем</td>
+                                            <td class="goods__data">500 г</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Вкус</td>
+                                            <td class="goods__data">Рис</td>
+                                        </tr>
+                                        <tr class="goods__row">
+                                            <td class="goods__parameters">Цена</td>
+                                            <td class="goods__data">500 Р.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button class="goods__order button" type="button">Заказать</button>
+                            </div>
+                        </li>
+                        <li class="goods__item goods__item--show">
+                            <div class="goods__item--wrapper">
+                                <span class="goods__plus"></span>
+                                <p class="goods__show">Показать еще <br class="goods__count"> 100500 товаров</p>
+                                <p class="goods__explain">На самом деле вкусов <br class="goods__choice"> гораздо
+                                    больше!
+                                </p>
+                                <button class="goods__showall button" type="button">Показать все</button>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
         </div>
+        </section>
 
+        <section class="additionally">
+            <h2 class="additionally__title">Дополнительные товары</h2>
+            <ul class="additionally__list">
+                <li class="additionally__item">
+                    <div class="additionally__wrapper">
+                        <div class="additionally__container">
+                            <p class="additionally__name">Сахарозаменитель</p>
+                            <p class="additionally__pack">1 упаковка (100 г)
+                                <span class="additionally__price">100 Р.</span>
+                            </p>
+                        </div>
+                        <button class="goods__order additionally__order button button--change" type="button">Заказать</button>
+                    </div>
+                </li>
+                <li class="additionally__item">
+                    <div class="additionally__wrapper">
+                        <div class="additionally__container">
+                            <p class="additionally__name">Питьевая вода</p>
+                            <p class="additionally__pack">5 литров
+                                <span class="additionally__price">50 Р.</span>
+                            </p>
+                        </div>
+                        <button class="goods__order additionally__order button button--change" type="button">Заказать</button>
+                    </div>
+                </li>
+                <li class="additionally__item">
+                    <div class="additionally__wrapper">
+                        <div class="additionally__container">
+                            <p class="additionally__name">Молоко</p>
+                            <p class="additionally__pack">1 литр
+                                <span class="additionally__price">100 Р.</span>
+                            </p>
+                        </div>
+                        <button class="goods__order additionally__order button button--change" type="button">Заказать</button>
+                    </div>
+                </li>
+                <li class="additionally__item additionally__item--vitamins">
+                    <div class="additionally__wrapper">
+                        <div class="additionally__container">
+                            <p class="additionally__name">Витамины</p>
+                            <p class="additionally__pack">1 упаковка (30 г)
+                                <span class="additionally__price">300 Р.</span>
+                            </p>
+                        </div>
+                        <button class="goods__order additionally__order button button--change" type="button">Заказать</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="additionally__stock">
+                <p class="additionally__slogan">Закажите все <br class="additionally__wrap"> и получите чехол для <br
+                        class="additionally__wrap"> кота в подарок!</p>
+            </div>
+        </section>
+        </div>
     </main>
 
     <footer class="page-footer">
-        <section class="contact contact__catalog">
-            <div class="contact__wrapper">
+        <section class="contact contact--form">
+            <div class="contact__wrapper contact--form__wrapper">
                 <p class="contact__partnership">Приглашаем к сотрудничеству дилеров!</p>
-                <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+                <p class="contact__address contact__address--form">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
             </div>
         </section>
 
         <section class="map">
             <img class="map__photo" src="img/bg-map-mobile@1x.png" width="320" height="400"
+                alt="Карта с адресом компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            <img class="map__photo--tablet" src="img/bg-map-tablet.png" width="767" height="400"
+                alt="Карта с адресом компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            <img class="map__photo--desktop" src="img/bg-map-desktop.png" width="1440" height="400"
                 alt="Карта с адресом компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </section>
 
@@ -240,13 +335,13 @@
             <section class="social">
                 <ul class="social__list">
                     <li class="social__item">
-                        <a class="social__link social__link--vkontakte" href="#"> Мы в ВКонтакте</a>
+                        <a class="social__link social__link--vkontakte" href="#"></a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+                        <a class="social__link social__link--instagram" href="#"></a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+                        <a class="social__link social__link--facebook" href="#"></a>
                     </li>
                 </ul>
             </section>

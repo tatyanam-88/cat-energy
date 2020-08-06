@@ -12,12 +12,26 @@
     text-transform: uppercase;      
 }
 
+@media (min-width:$tablet) {
+    .button {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .button--change {
+        padding-top: 10px;
+        padding-bottom: 10px; 
+    }
+}
+
 @media (min-width:$desktop) {
     .button {
         padding-left: 25px;
         padding-right: 25px;
+        padding-bottom: 10px;
+        padding-top: 10px;
         
         font-size: 20px;
         line-height: 20px;
-    }
+    }    
 }

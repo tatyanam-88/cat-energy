@@ -104,9 +104,13 @@
 
 @media (min-width:$desktop) {   
     .page-header {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
         padding-bottom: 600px;
     } 
+
+    .page-header--desktop {
+        padding-bottom: 0;
+    }
 
     .page-header__container {
         padding-top: 50px;

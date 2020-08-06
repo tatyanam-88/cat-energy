@@ -9,78 +9,101 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header class="page-header">
-        <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="192" height="36" alt="Cat Energy">
-        </a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item"><a href="index.html">Главная</a></li>
-                    <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-                    <li class="site-list__item site-list__item--active"><a>Подбор программы</a></li>
-                </ul>
+<body class="body__wrapper">
+    <header class="page-header page-header--desktop">
+        <div class="page-header__container">
+            <div class="page-header__wrapper">
+                <a class="page-header__logo">
+                    <img class="page-header__logo-cat" src="img/logo-mobile-cat.png" width="33" height="38"
+                        alt="Изображение кота">
+                    <img class="page-header__logo-image" src="img/logo-mobile-header.svg" width="101" height="18"
+                        alt="Cat Energy">
+                    <img class="page-header__logo-tablet" src="img/logo-tablet.svg" width="173" height="58"
+                        alt="Логотип Cat Energy">
+                    <img class="page-header__logo-desktop" src="img/logo-desktop.svg" width="202" height="59"
+                        alt="Логотип Cat Energy">
+                </a>
+                <button class="page-header__toggle" type="button"></button>
             </div>
-        </nav>
+            <nav class="main-nav">
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item site-list__item--desktop"><a href="index.html">Главная</a></li>
+                        <li class="site-list__item site-list__item--desktop"><a href="catalog.html">Каталог
+                                продукции</a></li>
+                        <li class="site-list__item site-list__item--active site-list__item--desktop"><a>Подбор
+                                программы</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main class="page-main">
         <div class="page-main__container">
             <h1 class="page-main__title">Подбор программы</h1>
             <section class="questionnaire">
-                <p class="questionnaire__instruction">Заполните анкету и мы подберем программу питания для вашего кота</p>
+                <p class="questionnaire__instruction">Заполните анкету и мы подберем <br> программу питания для вашего
+                    кота
+                </p>
                 <form class="form" action="">
-                    <ul class="form__list">
-                        <li class="form__item">
-                            <label class="form__label" for="name-pet">Имя:*</label>
-                            <input class="form__input" type="text" id="name-pet" placeholder="Барсик">
-                        </li>
-                        <li class="form__item">
-                            <label class="form__label" for="weight">Вес (кг):*</label>
-                            <input class="form__input" type="text" id="weight" placeholder="7">
-                        </li>
-                        <li class="form__item form__item--last">
-                            <label class="form__label" for="age">Возраст (лет):</label>
-                            <input class="form__input" type="text" id="age" placeholder="7">
-                        </li>
-                    </ul>
-    
-                    <ul class="form__list--criteria">
-                        <li class="form__item--criteria">
-                            <input class="form__input--radio" type="radio" id="slim" checked>
-                            <label class="form__label--radio" for="slim">Похудение</label>
-                        </li>
-                        <li class="form__item--criteria">
-                            <input class="form__input--radio" type="radio" id="set-weight">
-                            <label class="form__label--radio" for="set-weight">Набор массы</label>
-                        </li>
-                        <li class="form__item--criteria">
-                            <input class="form__input--radio" type="radio" id="advice">
-                            <label class="form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
-                        </li>
-                    </ul>
-    
+                    <div class="form__container">
+                        <ul class="form__list">
+                            <div class="form__list--wrapper">
+                                <li class="form__item">
+                                    <label class="form__label" for="name-pet">Имя:*</label>
+                                    <input class="form__input" type="text" id="name-pet" placeholder="Барсик">
+                                </li>
+                                <li class="form__item">
+                                    <label class="form__label" for="weight">Вес (кг):*</label>
+                                    <input class="form__input" type="text" id="weight" placeholder="7">
+                                </li>
+                                <li class="form__item form__item--last">
+                                    <label class="form__label" for="age">Возраст (лет):</label>
+                                    <input class="form__input" type="text" id="age" placeholder="7">
+                                </li>
+                            </div>
+                        </ul>
+
+                        <ul class="form__list--criteria">
+                            <div class="form__list--wrap">
+                                <li class="form__item--criteria">
+                                    <input class="form__input--radio" type="radio" id="slim" checked>
+                                    <label class="form__label--radio" for="slim">Похудение</label>
+                                </li>
+                                <li class="form__item--criteria">
+                                    <input class="form__input--radio" type="radio" id="set-weight">
+                                    <label class="form__label--radio" for="set-weight">Набор массы</label>
+                                </li>
+                                <li class="form__item--criteria">
+                                    <input class="form__input--radio" type="radio" id="advice">
+                                    <label class="form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
                     <fieldset class="form__contacts">
                         <legend class="form__title">Контактные данные (владельца кота)</legend>
                         <ul class="form__list--contacts">
                             <li class="form__item--contacts">
                                 <label class="form__label--contacts" for="mail">E-mail:*</label>
-                                <input class="form__input--contacts" type="email" id="mail" placeholder="Kuklachev@gmail.com">
+                                <input class="form__input--contacts" type="email" id="mail"
+                                    placeholder="Kuklachev@gmail.com">
                             </li>
                             <li class="form__item--contacts">
                                 <label class="form__label--contacts" for="phone">Телефон:*</label>
-                                <input class="form__input--contacts" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+                                <input class="form__input--contacts" type="tel" id="phone"
+                                    placeholder="8 (960) 900-60-90">
                             </li>
                         </ul>
                     </fieldset>
-    
+
                     <fieldset class="form__comment">
                         <legend class="form__title">Комментарий</legend>
-                        <textarea class="form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                        <textarea class="form__textarea" name="comment"
+                            placeholder="Расскажите обо всех повадках кота"></textarea>
                     </fieldset>
-    
+
                     <fieldset class="form__addition">
                         <legend class="form__title">Дополнительно</legend>
                         <ul class="form__list--addition">
@@ -102,25 +125,31 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <button class="form__submit button" type="button">Отправить заявку</button>
-                    <p class="form__note">
-                        <sup>*</sup> - Обязательные поля
-                    </p>
+                    <div class="form__cont">
+                        <button class="form__submit button" type="button">Отправить заявку</button>
+                        <p class="form__note">
+                            <sup>*</sup> - Обязательные поля
+                        </p>
+                    </div>
                 </form>
             </section>
-        </div>       
+        </div>
     </main>
 
     <footer class="page-footer">
-        <section class="contact contact__catalog">
-            <div class="contact__wrapper">
+        <section class="contact contact--form">
+            <div class="contact__wrapper contact--form__wrapper">
                 <p class="contact__partnership">Приглашаем к сотрудничеству дилеров!</p>
-                <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+                <p class="contact__address contact__address--form">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
             </div>
         </section>
 
         <section class="map">
             <img class="map__photo" src="img/bg-map-mobile@1x.png" width="320" height="400"
+                alt="Карта с адресом компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            <img class="map__photo--tablet" src="img/bg-map-tablet.png" width="767" height="400"
+                alt="Карта с адресом компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            <img class="map__photo--desktop" src="img/bg-map-desktop.png" width="1440" height="400"
                 alt="Карта с адресом компании: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </section>
 
@@ -137,13 +166,13 @@
             <section class="social">
                 <ul class="social__list">
                     <li class="social__item">
-                        <a class="social__link social__link--vkontakte" href="#"> Мы в ВКонтакте</a>
+                        <a class="social__link social__link--vkontakte" href="#"></a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+                        <a class="social__link social__link--instagram" href="#"></a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+                        <a class="social__link social__link--facebook" href="#"></a>
                     </li>
                 </ul>
             </section>
@@ -162,4 +191,5 @@
         </div>
     </footer>
 </body>
+
 </html>

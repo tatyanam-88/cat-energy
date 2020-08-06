@@ -1,15 +1,14 @@
-.additionally {
-    padding-left: 20px;
-    padding-right: 20px;
+.additionally {    
     padding-bottom: 35px;
+    margin: 0 auto;
+    width: 280px;
 
     background-color: #ffffff;
 }
 
-.additionally__title {
-    margin: 0;
+.additionally__title {  
     margin-bottom: 30px;
-
+  
     font-size: 24px;
     line-height: 24px;
     font-weight: normal;    
@@ -24,8 +23,9 @@
 
 .additionally__item {
     padding-top: 20px;
+    padding-bottom: 20px;
 
-    border-top: 2px solid #cdcdcd;    
+    border-top: 1px solid #cdcdcd;    
 }
 
 .additionally__name {
@@ -47,17 +47,25 @@
     line-height: 14px;
     text-transform: none;   
     color: #222222; 
+    
+    display: flex;
+    justify-content: space-between;
 }
 
 .additionally__item--vitamins {
     margin-bottom: 40px;
     
-    border-bottom: 2px solid #cdcdcd;    
+    border-bottom: 1px solid #cdcdcd;    
 }
 
 .additionally__stock {
+    margin: 0 auto;
+
+    width: 280px;    
     background-image: url(../img/gift-photo-mobile@1x.jpg);
     background-repeat: no-repeat;
+
+    position: relative;
 }
 
 .additionally__slogan {
@@ -72,4 +80,197 @@
     line-height: 20px;
     color: #ffffff;
     text-align: center;
+
+    &::before {
+        content: "";
+        background-image: url(../img/gift-tablet.svg);
+        width: 55px;
+        height: 60px;
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 40%;
+    }
+}
+
+.additionally__wrap {
+    display: none;
+}
+
+@media (min-width:$tablet) {
+    .additionally {
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 70px;
+
+        width: 708px;        
+    }
+
+    .additionally__title {
+        margin-left: 40px;
+        margin-bottom: 60px;
+        
+        font-size: 36px;
+        line-height: 36px;
+
+        width: 708px;
+    }
+
+    .additionally__list {  
+        margin-bottom: 70px;
+              
+        border: 1px solid #e6e6e6;
+    }
+
+    .additionally__item {
+        padding: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+
+        border-top: none;
+        border-bottom: 1px solid #d9d9d9;
+        display: flex;
+    }
+
+    .additionally__item--vitamins {
+        margin: 0;
+
+        border-bottom: none;
+    }
+
+    .additionally__wrapper {
+        width: 708px;
+    }
+
+    .additionally__container {
+        margin-bottom: 25px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .additionally__name {
+        margin: 0;
+
+        font-size: 20px;
+        line-height: 20px;
+
+        flex-grow: 3;
+    }
+
+    .additionally__pack {
+        margin: 0;
+
+        font-size: 16px;
+        line-height: 20px;
+
+        flex-grow: 1;
+    }
+
+    .additionally__order {
+        width: 628px;
+    }
+
+    .additionally__stock {
+        margin: 0 auto;        
+    
+        width: 708px;    
+        background-image: url(../img/gift-photo-tablet.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .additionally__slogan {
+        padding: 0;
+        padding-top: 75px;
+        padding-bottom: 65px;
+        padding-right: 120px;        
+
+        text-align: right;
+
+        &::before {
+            left: 90px;
+        }
+    }
+
+    .additionally__wrap {
+        display: block;
+    }
+}
+
+@media (min-width:$desktop) {
+    .additionally {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .additionally,
+    .additionally__title,
+    .additionally__wrapper {
+        width: 1220px;
+    }
+
+    .additionally__title {
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+    .additionally__wrapper {
+       display: flex;
+       justify-content: space-between;
+    }
+
+    .additionally__container {
+        margin: 0;
+
+        flex-grow: 1;
+        align-self: center;
+    }
+
+    .additionally__name {
+        flex-grow: 0;
+        width: 320px;
+    }
+
+    .additionally__pack {       
+        margin-right: 40px;
+    }
+
+    .additionally__list {
+        margin-bottom: 0;
+
+        width: 895px;      
+
+        border: none;
+    }
+
+    .additionally__item {
+        padding-left: 0;
+        padding-right: 0; 
+        padding-bottom: 15px; 
+        padding-top: 15px;     
+
+        border-bottom: 1px solid #cdcdcd;
+    }
+
+    .additionally__order {
+        width: 245px;
+    }
+
+    .additionally__stock {
+        margin-right: 0;        
+
+        background-image: url(../img/gift-photo-desktop.jpg);
+        background-repeat: no-repeat;
+        width: 245px;
+    }
+
+    .additionally__slogan {
+        padding-right: 0;       
+        padding-top: 190px;
+
+        text-align: center;
+    }
+    
 }

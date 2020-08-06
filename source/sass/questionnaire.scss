@@ -1,8 +1,42 @@
+.questionnaire {
+    margin-bottom: 30px;
+}
+
 .questionnaire__instruction {
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 40px;
 
+    width: 280px;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+
+    br {
+        display: none;
+    }
+}
+
+@media (min-width:$tablet) {
+    .questionnaire {
+        margin-bottom: 0;
+    }
+
+    .questionnaire__instruction {       
+        margin-bottom: 65px;
+        
+        width: 630px;
+        font-size: 20px;
+        line-height: 30px;
+        
+        br {
+            display: block;
+        }
+    }
+}
+
+@media (min-width:$desktop) {
+    .questionnaire__instruction {
+        margin: 0;
+        margin-bottom: 65px;
+    }
 }

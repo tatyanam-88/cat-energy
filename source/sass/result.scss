@@ -1,6 +1,6 @@
 .result {
-    padding-top: 20px;      
-    margin-bottom: 30px;
+    padding-top: 20px;   
+    padding-bottom: 20px;   
 
     background-color: #f2f2f2;
 }
@@ -182,7 +182,7 @@
 
 @media (min-width:$desktop) {
     .result {     
-        padding-top: 0;
+        padding-top: 0;        
         background: linear-gradient(#ffffff 120px, #f2f2f2 20px);
         position: relative;
     }
@@ -233,11 +233,15 @@
     }
 
     .result__total {
-        margin: 0;       
+        margin: 0;  
+        
+        width: 325px;
+        text-align: left;
     }
 
     .result__number {
         margin-left: 55px;
+        display: inline-block;
     }       
 
     .result__contain {

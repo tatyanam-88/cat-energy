@@ -29,40 +29,6 @@
     display: none;
 }
 
-.page-header__toggle {
-    padding: 0;    
-   
-    width: 22px;
-    height: 22px;
-
-    border: none;
-    background-color: #ffffff;
-
-    &::before {
-        position: absolute;  
-        top: 20px;
-        right: 9px; 
-
-        content: "";
-        height: 23px;
-        width: 2px;
-        background-color: #000000;
-        transform: rotate(45deg);
-        }
-
-    &::after {
-        position: absolute;  
-        top: 20px;
-        right: 9px;
-
-        content: "";
-        height: 23px;
-        width: 2px;
-        background-color: #000000;
-        transform: rotate(-45deg);
-    }
-}
-
 @media (min-width:$tablet) {
     .page-header {
        padding-bottom: 60px;      
@@ -95,11 +61,7 @@
 
     .page-header__logo-desktop {
         display: none;
-    }
-
-    .page-header__toggle {
-        display: none;
-    }
+    }    
 }
 
 @media (min-width:$desktop) {   

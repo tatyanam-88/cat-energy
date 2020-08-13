@@ -1,3 +1,15 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 @font-face {
   font-family: "Oswald";
   src: local("Oswald"), local("Oswald"), url("../fonts/oswald-v35-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/oswald-v35-latin_cyrillic-regular.woff") format("woff");
@@ -59,31 +71,6 @@ img {
 .page-header__logo-desktop {
   display: none; }
 
-.page-header__toggle {
-  padding: 0;
-  width: 22px;
-  height: 22px;
-  border: none;
-  background-color: #ffffff; }
-  .page-header__toggle::before {
-    position: absolute;
-    top: 20px;
-    right: 9px;
-    content: "";
-    height: 23px;
-    width: 2px;
-    background-color: #000000;
-    transform: rotate(45deg); }
-  .page-header__toggle::after {
-    position: absolute;
-    top: 20px;
-    right: 9px;
-    content: "";
-    height: 23px;
-    width: 2px;
-    background-color: #000000;
-    transform: rotate(-45deg); }
-
 @media (min-width: 768px) {
   .page-header {
     padding-bottom: 60px; }
@@ -103,8 +90,6 @@ img {
   .page-header__logo-tablet {
     display: block; }
   .page-header__logo-desktop {
-    display: none; }
-  .page-header__toggle {
     display: none; } }
 
 @media (min-width: 1440px) {
@@ -145,7 +130,8 @@ img {
     width: 708px;
     font-size: 60px; }
   .page-main__title--tablet {
-    margin-bottom: 120px; } }
+    margin-bottom: 120px;
+    text-align: left; } }
 
 @media (min-width: 1440px) {
   .page-main__container {
@@ -159,6 +145,43 @@ img {
   .page-main__title--desktop {
     margin-bottom: 120px; } }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: 2;
+  width: 70px;
+  height: 50px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer; }
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 30px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000; }
+
+.main-nav--opened .main-nav__toggle {
+  top: 0; }
+  .main-nav--opened .main-nav__toggle::before, .main-nav--opened .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 40px;
+    width: 25px;
+    height: 2px;
+    background-color: #000000; }
+  .main-nav--opened .main-nav__toggle::before {
+    transform: rotate(45deg);
+    box-shadow: none; }
+  .main-nav--opened .main-nav__toggle::after {
+    transform: rotate(-45deg); }
+
 .main-nav__wrapper {
   margin: 0 auto;
   text-align: center; }
@@ -171,7 +194,22 @@ img {
 .main-nav__list:last-child {
   border-bottom: 1px solid #e6e6e6; }
 
+@media (max-width: 767px) {
+  .main-nav--closed .site-list__item {
+    display: none; }
+  .main-nav--opened .main-nav__wrapper {
+    background-color: #ffffff; }
+  .main-nav--nojs .main-nav__toggle {
+    display: none; }
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0; }
+  .main-nav--nojs .site-list__item {
+    display: block; } }
+
 @media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none; }
   .main-nav__list {
     display: flex;
     min-width: 450px;
@@ -368,6 +406,26 @@ img {
   background-repeat: no-repeat;
   background-position: 10% 13%; }
 
+.catalog__arrow {
+  position: relative;
+  top: -13px;
+  width: 25px;
+  height: 3px;
+  background-color: #3e4242;
+  left: 100px;
+  display: block; }
+
+.catalog__arrow::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -6px;
+  left: 100%;
+  border-width: 8px 0 8px 10px;
+  border-style: solid;
+  border-color: transparent #3e4242; }
+
 .catalog__weight {
   background-image: url(../img/cat-pro-mobile.png);
   background-repeat: no-repeat;
@@ -413,10 +471,13 @@ img {
     background-position: 89% 49%; }
   .catalog__title {
     margin-bottom: 20px;
+    font-size: 36px;
     text-align: left; }
   .catalog__info {
     border: none;
-    width: 340px; }
+    font-size: 16px;
+    line-height: 24px;
+    width: 370px; }
   .catalog__weight {
     padding-left: 50px;
     padding-right: 50px;
@@ -424,7 +485,7 @@ img {
     padding-bottom: 60px;
     background-image: url(../img/cat-pro.png);
     background-repeat: no-repeat;
-    background-position: 93% 66%; } }
+    background-position: 93% 60%; } }
 
 @media (min-width: 1440px) {
   .catalog {
@@ -456,7 +517,9 @@ img {
     padding-top: 60px;
     background-image: url(../img/cat-pro-desktop.png);
     background-repeat: no-repeat;
-    background-position: 5% 10%; } }
+    background-position: 5% 10%; }
+  .catalog__arrow {
+    left: 130px; } }
 
 .advantages {
   padding-bottom: 40px;
@@ -1007,16 +1070,16 @@ img {
   display: block;
   background-color: #d3d3d3;
   height: 30px;
-  width: 3px;
+  width: 2px;
   position: relative;
-  left: 45%; }
+  left: 49%; }
   .goods__plus::after {
     content: "";
-    height: 3px;
+    height: 2px;
     width: 30px;
     background-color: #d3d3d3;
     position: absolute;
-    left: -13px;
+    left: -14px;
     top: 13px; }
 
 .goods__item--show {
@@ -1340,6 +1403,8 @@ img {
     padding-bottom: 15px;
     padding-top: 15px;
     border-bottom: 1px solid #cdcdcd; }
+    .additionally__item:first-child {
+      border-top: 1px solid #cdcdcd; }
   .additionally__order {
     width: 245px; }
   .additionally__stock {
@@ -1465,7 +1530,28 @@ img {
 .form__item--contacts {
   margin-bottom: 20px;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
+  .form__item--contacts:first-child::after {
+    content: "";
+    background-image: url(../img/mail.svg);
+    background-repeat: no-repeat;
+    display: block;
+    width: 17px;
+    height: 13px;
+    position: absolute;
+    top: 18px;
+    right: 15px; }
+  .form__item--contacts:nth-child(2)::after {
+    content: "";
+    background-image: url(../img/phone.svg);
+    background-repeat: no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 18px;
+    right: 12px; }
 
 .form__label--contacts {
   margin-right: 12px;

@@ -22,11 +22,11 @@
                         alt="Логотип Cat Energy">
                     <img class="page-header__logo-desktop" src="img/logo-desktop.svg" width="202" height="59"
                         alt="Логотип Cat Energy">
-
-                </a>
-                <button class="page-header__toggle" type="button"></button>
+                </a>               
             </div>
-            <nav class="main-nav">
+            
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item site-list__item--active"><a>Главная</a></li>
@@ -61,7 +61,7 @@
                     <p class="catalog__info">Ваш кот весит больше собаки и почти утратил способность лазить по
                         деревьям?Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                     <a class="catalog__link" href="catalog.html">Каталог Slim</a>
-                    <span class="catalog__arrow">Стрелочка</span>
+                    <span class="catalog__arrow"></span>
                 </article>
 
                 <article class="catalog__weight weight">
@@ -69,7 +69,7 @@
                     <p class="catalog__info">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
                         Pro поможет вашему коту нарастить необходимые мышцы!</p>
                     <a class="catalog__link" href="catalog.html">Каталог Pro</a>
-                    <span class="catalog__arrow">Стрелочка</span>
+                    <span class="catalog__arrow"></span>
                 </article>
             </div>
         </section>
@@ -189,6 +189,8 @@
             </section>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -252,6 +252,10 @@
         padding-top: 15px;     
 
         border-bottom: 1px solid #cdcdcd;
+
+        &:first-child {
+            border-top: 1px solid #cdcdcd;
+        }       
     }
 
     .additionally__order {

@@ -75,16 +75,16 @@
     display: block;
     background-color: #d3d3d3;
     height: 30px;
-    width: 3px;
+    width: 2px;
     position: relative;  
-    left: 45%; 
+    left: 49%; 
     &::after {
         content: "";
-        height: 3px;
+        height: 2px;
         width: 30px;
         background-color: #d3d3d3;
         position: absolute;
-        left: -13px;
+        left: -14px;
         top: 13px;
     }
 }

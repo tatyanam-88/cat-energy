@@ -23,7 +23,29 @@
 
     background-image: url(../img/cat-slim-mobile.png);
     background-repeat: no-repeat;
-    background-position: 10% 13%;
+    background-position: 10% 13%;   
+}
+
+.catalog__arrow {
+    position: relative;
+    top: -13px;
+    width: 25px;
+    height: 3px;
+    background-color: #3e4242;    
+    left: 100px;
+    display: block;
+}
+
+.catalog__arrow::after {
+    content: "";
+    width: 0; 
+    height: 0;
+    position: absolute; 
+    bottom: -6px; 
+    left: 100%;
+    border-width: 8px 0 8px 10px;
+    border-style: solid;
+    border-color: transparent #3e4242;
 }
 
 .catalog__weight {     
@@ -86,13 +108,16 @@
     .catalog__title {
         margin-bottom: 20px;
 
+        font-size: 36px;
         text-align: left;
     }
 
     .catalog__info {
         border: none;
 
-        width: 340px;
+        font-size: 16px;
+        line-height: 24px;
+        width: 370px;
     }
 
     .catalog__weight {
@@ -103,7 +128,7 @@
 
         background-image: url(../img/cat-pro.png);
         background-repeat: no-repeat;
-        background-position: 93% 66%;
+        background-position: 93% 60%;
     }    
 }
 
@@ -155,4 +180,8 @@
         background-repeat: no-repeat;
         background-position: 5% 10%;
     }    
+
+    .catalog__arrow {
+        left: 130px;
+    }
 }

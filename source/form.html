@@ -23,9 +23,11 @@
                     <img class="page-header__logo-desktop" src="img/logo-desktop.svg" width="202" height="59"
                         alt="Логотип Cat Energy">
                 </a>
-                <button class="page-header__toggle" type="button"></button>
             </div>
-            <nav class="main-nav">
+
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+                        меню</span></button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item site-list__item--desktop"><a href="index.html">Главная</a></li>
@@ -87,12 +89,12 @@
                         <ul class="form__list--contacts">
                             <li class="form__item--contacts">
                                 <label class="form__label--contacts" for="mail">E-mail:*</label>
-                                <input class="form__input--contacts" type="email" id="mail"
+                                <input class="form__input--contacts form__input--email" type="email" id="mail"
                                     placeholder="Kuklachev@gmail.com">
                             </li>
                             <li class="form__item--contacts">
                                 <label class="form__label--contacts" for="phone">Телефон:*</label>
-                                <input class="form__input--contacts" type="tel" id="phone"
+                                <input class="form__input--contacts form__input--tel" type="tel" id="phone"
                                     placeholder="8 (960) 900-60-90">
                             </li>
                         </ul>
@@ -190,6 +192,8 @@
             </section>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

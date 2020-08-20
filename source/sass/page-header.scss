@@ -16,19 +16,6 @@
     display: flex;
 }
 
-.page-header__logo-cat {
-    margin: 0;
-    margin-right: 57px;
-}
-
-.page-header__logo-tablet {
-    display: none;
-}
-
-.page-header__logo-desktop {
-    display: none;
-}
-
 @media (min-width:$tablet) {
     .page-header {
        padding-bottom: 60px;      
@@ -48,20 +35,7 @@
         padding: 0;
 
         width: 180px;
-    }
-    
-    .page-header__logo-cat,
-    .page-header__logo-image {
-        display: none;
-    }
-
-    .page-header__logo-tablet {
-        display: block;
-    }
-
-    .page-header__logo-desktop {
-        display: none;
-    }    
+    }     
 }
 
 @media (min-width:$desktop) {   
@@ -78,15 +52,7 @@
         padding-top: 50px;
 
         width: 1220px;
-    }    
-
-    .page-header__logo-tablet {
-        display: none;
-    }
-
-    .page-header__logo-desktop {
-        display: block;
-    }
+    }      
 }
 
 

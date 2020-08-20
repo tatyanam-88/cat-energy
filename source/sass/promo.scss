@@ -42,11 +42,6 @@
     text-align: center;
 }
 
-.promo__photo-tablet,
-.promo__photo-desktop {
-    display: none;
-}
-
 .promo__select-programm {    
     text-decoration: none;
     display: block; 
@@ -83,19 +78,7 @@
         line-height: 20px;
         color: #000000;
         text-align: left;
-    }
-
-    .promo__photo {
-        display: none;
-    }
-
-    .promo__photo-tablet {
-        display: block;      
-    }
-
-    .promo__photo-desktop {
-        display: none;
-    }
+    }    
 
     .promo__select-programm {
        width: 208px;
@@ -106,7 +89,8 @@
     }
 }
 
-@media (min-width:$desktop) {    
+@media (min-width:$desktop) {     
+
     .promo__wrapper {
         width: 1220px;
 
@@ -126,18 +110,14 @@
         margin: 0;
         margin-left: 70px;
     }
-
-    .promo__photo-tablet {
-        display: none;
-    }
-
-    .promo__photo-desktop {
+    
+    .promo__image {
         margin: 0;
         display: block;
         position: relative;
         bottom: 230px;
-        left: 455px;
-    }
+        left: 455px; 
+    }   
 
     .promo__select-programm {       
         left: 70px;        

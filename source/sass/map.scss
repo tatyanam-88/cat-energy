@@ -1,36 +1,19 @@
-.map__photo--tablet,
-.map__photo--desktop {
-    display: none;
+.map {
+    margin: 0 auto;
+    width: 320px;
 }
 
-@media (min-width:$tablet) {
-    .map__photo {
-        display: none;
-    }
-
-    .map__photo--tablet {
-        display: block;
-    }
-
-    .map__photo--desktop {
-        display: none;
-    }
+@media (min-width:$tablet) { 
+    .map {
+        width: 768px;
+    }   
 }
 
 @media (min-width:$desktop) { 
     .map {
+        width: 1440px;
         margin-top: -90px;  
         
         background-color: #f2f2f2;
-    }
-    
-    .map__photo--tablet {
-        display: none;
-    }
-
-    .map__photo--desktop {
-        display: block;
-    }
-
-
+    }   
 }
